@@ -84,7 +84,7 @@ header {
     background-image: 
         url('../images/image-mockups.png'),        
         url('../images/bg-intro-desktop.svg');
-    background-position: center left 20rem, top 0 left 10rem;
+    background-position: center left 7rem, center left;
     background-repeat: no-repeat, no-repeat;
     flex-grow: 1;
     display: flex;
@@ -230,4 +230,75 @@ footer > * {
 .footer-disclaimer {
     color: hsl(233, 8%, 62%);
     margin-top: 1rem;
+}
+
+@media(max-width: 450px) {
+    footer {
+        flex-direction: column;
+        padding: 2.5rem;
+        align-items: center;
+    }
+
+    .footer-cta {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        gap: 2em;
+        margin-top: 2em;
+    }
+
+    .help-links {
+        flex-direction: column;
+        gap: 0;
+        margin-top: 1.5em;
+    }
+
+    .help-links ul {
+        margin-bottom: 0px;
+    }
+
+    .brand-social {
+        margin-top: 1rem;
+    }
+
+    .jumbotron-image {
+        background-position: center center, center center;
+        height: 30rem;
+        background-size: 164%;
+        max-width: none;
+        margin-top: 0;
+    }
+
+    .jumbotron {
+        padding-left: 0;
+        flex-direction: column-reverse;
+        margin-bottom: 0;
+    }
+
+    .jumbotron-text {
+        max-width: none;
+        text-align: center;
+        padding: 0px 2rem;
+    }
+
+    .jumbotron-headline {
+        font-size: 2rem;
+    }
+
+    .jumbotron-subheadline {
+        width: auto;
+    }
+
+    .jumbotron-cta {
+        margin: 2rem 0;
+    }
+
+    .latest-articles, .why-choose {
+        padding: 5rem 2.5rem;
+    }
+
+    .article-box {
+        flex-direction: column;
+    }
 }
