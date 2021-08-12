@@ -117,12 +117,14 @@ header {
 
 .featured-box {
     display: flex;
-    gap: 1em;
+    gap: 1.5em;
     margin-top: 5rem;
+    flex-wrap: wrap;
 }
 
 .featured-box > * {
     flex-grow: 1;
+    max-width: 15rem;
 }
 
 .featured-headline {
@@ -145,12 +147,14 @@ header {
 
 .article-box {
     display: flex;
-    gap: 1em;    
+    gap: 1.5em;
     margin-top: 5rem;
+    flex-wrap: wrap;
 }
 
 .article-box > * {
-    flex-basis: 25%;
+    flex-basis: 20%;
+    flex-grow: 1;
 }
 
 .article-headline {
@@ -170,9 +174,60 @@ header {
     height: 13rem;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    width: 100%;
 }
 
 footer {
-    height: 7rem;
+    padding: 2.5rem 7rem;
     background-color: hsl(233, 26%, 24%);    
+    margin-top: auto;
+    display: flex;    
+    flex-wrap: wrap;
+}
+
+footer > * {
+    flex-grow: 1;
+}
+
+.brand-social {
+    display: flex;
+    gap: .75rem;
+    margin-top: 3rem;
+}
+
+.help-links {
+    display: flex;
+    gap: 1.5em;
+}
+
+.help-links ul {
+    list-style: none;    
+    margin-top: 0px;
+}
+
+.help-links a {
+    color: hsl(233, 8%, 62%);
+    text-decoration: none;
+    line-height: 2rem;
+}
+
+.footer-cta {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.footer-cta a {
+    background-image: linear-gradient(to right, hsl(136, 65%, 51%) , hsl(192, 70%, 51%)); 
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-disclaimer {
+    color: hsl(233, 8%, 62%);
+    margin-top: 1rem;
 }
