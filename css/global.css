@@ -1,0 +1,102 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+    margin: 0;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Public Sans';
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    flex-wrap: wrap;
+    padding: 2rem 0rem;
+    gap: 2em;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5em;
+}
+
+.nav-links > a {
+    color: hsl(233, 8%, 62%);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-cta {
+    background-image: linear-gradient(to right, hsl(136, 65%, 51%) , hsl(192, 70%, 51%)); 
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.page-content {
+    position: relative;
+    z-index: -1;
+}
+
+.jumbotron-cta {
+    margin-top: 2rem;
+}
+
+.jumbotron-cta a {
+    background-image: linear-gradient(to right, hsl(136, 65%, 51%) , hsl(192, 70%, 51%)); 
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.jumbotron {
+    display: flex;
+    padding-left: 7rem;
+    gap: 10%;
+    background-color: hsl(0, 0%, 98%);
+    margin-bottom: -10rem;
+}
+
+.jumbotron-text {
+    margin-top: 5rem;
+    max-width: 30%;
+}
+
+.jumbotron-subheadline {
+    color: hsl(233, 8%, 62%);
+    line-height: 1.5rem;
+}
+
+.jumbotron-image {
+    max-width: 60%;
+    margin-top: -10rem;
+    background-image: url('../images/bg-intro-desktop.svg');
+}
+
+.jumbotron img {
+    padding-left: 10rem;
+}
+
+.jumbotron-headline {
+    color: hsl(233, 26%, 24%);
+    font-size: 3rem;
+}
+
+.content-grey {
+    background-color: hsl(220, 16%, 96%);
+    position: relative;
+}
+
+.why-choose {
+    height: 30rem;
+}
