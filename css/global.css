@@ -301,4 +301,12 @@ footer > * {
     .article-box {
         flex-direction: column;
     }
+
+    .why-choose {
+        text-align: center;
+    }
+    
+    .featured-box {
+        justify-content: center;
+    }
 }
